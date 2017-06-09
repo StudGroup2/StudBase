@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "StudeBaseProject1", "StudeBaseProject1\StudeBaseProject1.shproj", "{457DC996-0412-4BC4-BB22-AA6E5B765CF6}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		StudeBaseProject1\StudeBaseProject1.projitems*{457dc996-0412-4bc4-bb22-aa6e5b765cf6}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
