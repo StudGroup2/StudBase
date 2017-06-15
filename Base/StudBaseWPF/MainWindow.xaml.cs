@@ -29,5 +29,10 @@ namespace StudBaseWPF
         {
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Тимин А.А. & Таратынов А.Н.", "Авторы");
+        }
     }
 }
