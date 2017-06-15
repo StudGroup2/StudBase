@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.Background>
+
+            <ImageBrush/>
+
+        </Grid.Background>
+
+        <Image Source="zxc.jpg" Stretch="Fill"/>
+        <Button Content="База данных" HorizontalAlignment="Left" Margin="228,98,0,0" VerticalAlignment="Top" Width="76" Height="37"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="228,140,0,0" VerticalAlignment="Top" Width="76" Height="36" Click="Button_Click"/>
     </Grid>
 </Window>
