@@ -1,0 +1,1 @@
+l-out l-ret r-out r-ret ground mic in mic power
