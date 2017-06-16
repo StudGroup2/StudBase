@@ -55,11 +55,44 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Form1.cs">
+    <Compile Include="AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Студенты.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1Студенты.Designer.cs">
+      <DependentUpon>Form1Студенты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2Преподаватели.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Преподаватели.Designer.cs">
+      <DependentUpon>Form2Преподаватели.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3Уроки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3Уроки.Designer.cs">
+      <DependentUpon>Form3Уроки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4Оценки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4Оценки.Designer.cs">
+      <DependentUpon>Form4Оценки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5Должность.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5Должность.Designer.cs">
+      <DependentUpon>Form5Должность.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="StudBaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -81,6 +114,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,8 +137,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Студенты.resx">
+      <DependentUpon>Form1Студенты.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Преподаватели.resx">
+      <DependentUpon>Form2Преподаватели.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3Уроки.resx">
+      <DependentUpon>Form3Уроки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4Оценки.resx">
+      <DependentUpon>Form4Оценки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5Должность.resx">
+      <DependentUpon>Form5Должность.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

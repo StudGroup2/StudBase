@@ -1,11 +1,13 @@
-﻿<Window x:Class="WpfApp1.Window1"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="Window1" Height="720" Width="1280">
+﻿<Page x:Class="WpfApp1.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Window1" Height="720" Width="1280">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="667*"/>
@@ -18,7 +20,7 @@
         </Grid.Background>
 
         <Image Source="zxc.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
-        <Menu Margin="0,0,0,658" Grid.ColumnSpan="2">
+        <Menu Margin="0,0,0,690" Grid.ColumnSpan="2">
             <MenuItem Header="File" FontSize="16" Height="19" Width="60">
                 <MenuItem Header="New"></MenuItem>
                 <MenuItem Header="Open"></MenuItem>
@@ -36,10 +38,10 @@
                 <MenuItem Header="Paste"/>
             </MenuItem>
         </Menu>
-        <Button Content="Студенты" HorizontalAlignment="Left" Margin="410,196,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="Студенты" HorizontalAlignment="Left" Margin="410,196,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold"/>
         <Button Content="Преподаватели" HorizontalAlignment="Left" Margin="100,196,0,0" VerticalAlignment="Top" Width="162" Height="70" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
         <Button Content="Уроки" HorizontalAlignment="Left" Margin="410,345,0,0" VerticalAlignment="Top" Width="168" Height="69" FontSize="18" FontWeight="Bold"/>
         <Button Content="Оценки" HorizontalAlignment="Left" Margin="100,345,0,0" VerticalAlignment="Top" Width="162" Height="69" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
         <Button Content="Должность" HorizontalAlignment="Left" Margin="410,480,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold"/>
     </Grid>
-</Window>
+</Page>

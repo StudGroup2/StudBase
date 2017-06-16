@@ -1,6 +1,6 @@
 ﻿namespace WpfApp1
 {
-    partial class Form1
+    partial class Form4Оценки
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.студентыTableAdapter1 = new WpfApp1.StudBaseDataSetTableAdapters.СтудентыTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.студентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.оценкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.оценкиTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ОценкиTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОСDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.группыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.годРожденияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.преподавателиTableAdapter1 = new WpfApp1.StudBaseDataSetTableAdapters.ПреподавателиTableAdapter();
+            this.фИОПDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.дисциплинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.оценкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оценкиBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // студентыTableAdapter1
-            // 
-            this.студентыTableAdapter1.ClearBeforeFill = true;
             // 
             // dataGridView1
             // 
@@ -55,23 +52,28 @@
             this.кодDataGridViewTextBoxColumn,
             this.фИОСDataGridViewTextBoxColumn,
             this.группыDataGridViewTextBoxColumn,
-            this.годРожденияDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.студентыBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(62, 62);
+            this.фИОПDataGridViewTextBoxColumn,
+            this.дисциплинаDataGridViewTextBoxColumn,
+            this.оценкиDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.оценкиBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(231, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(447, 139);
+            this.dataGridView1.Size = new System.Drawing.Size(660, 150);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // studBaseDataSet
             // 
             this.studBaseDataSet.DataSetName = "StudBaseDataSet";
             this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // студентыBindingSource
+            // оценкиBindingSource
             // 
-            this.студентыBindingSource.DataMember = "Студенты";
-            this.студентыBindingSource.DataSource = this.studBaseDataSet;
+            this.оценкиBindingSource.DataMember = "Оценки";
+            this.оценкиBindingSource.DataSource = this.studBaseDataSet;
+            // 
+            // оценкиTableAdapter
+            // 
+            this.оценкиTableAdapter.ClearBeforeFill = true;
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -91,41 +93,51 @@
             this.группыDataGridViewTextBoxColumn.HeaderText = "№ Группы";
             this.группыDataGridViewTextBoxColumn.Name = "группыDataGridViewTextBoxColumn";
             // 
-            // годРожденияDataGridViewTextBoxColumn
+            // фИОПDataGridViewTextBoxColumn
             // 
-            this.годРожденияDataGridViewTextBoxColumn.DataPropertyName = "Год рождения";
-            this.годРожденияDataGridViewTextBoxColumn.HeaderText = "Год рождения";
-            this.годРожденияDataGridViewTextBoxColumn.Name = "годРожденияDataGridViewTextBoxColumn";
+            this.фИОПDataGridViewTextBoxColumn.DataPropertyName = "ФИО П";
+            this.фИОПDataGridViewTextBoxColumn.HeaderText = "ФИО П";
+            this.фИОПDataGridViewTextBoxColumn.Name = "фИОПDataGridViewTextBoxColumn";
             // 
-            // преподавателиTableAdapter1
+            // дисциплинаDataGridViewTextBoxColumn
             // 
-            this.преподавателиTableAdapter1.ClearBeforeFill = true;
+            this.дисциплинаDataGridViewTextBoxColumn.DataPropertyName = "Дисциплина";
+            this.дисциплинаDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
+            this.дисциплинаDataGridViewTextBoxColumn.Name = "дисциплинаDataGridViewTextBoxColumn";
             // 
-            // Form1
+            // оценкиDataGridViewTextBoxColumn
+            // 
+            this.оценкиDataGridViewTextBoxColumn.DataPropertyName = "Оценки";
+            this.оценкиDataGridViewTextBoxColumn.HeaderText = "Оценки";
+            this.оценкиDataGridViewTextBoxColumn.Name = "оценкиDataGridViewTextBoxColumn";
+            // 
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 261);
+            this.ClientSize = new System.Drawing.Size(1063, 261);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form4";
+            this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оценкиBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private StudBaseDataSetTableAdapters.СтудентыTableAdapter студентыTableAdapter1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private StudBaseDataSet studBaseDataSet;
+        private System.Windows.Forms.BindingSource оценкиBindingSource;
+        private StudBaseDataSetTableAdapters.ОценкиTableAdapter оценкиTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn фИОСDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn группыDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn годРожденияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource студентыBindingSource;
-        private StudBaseDataSet studBaseDataSet;
-        private StudBaseDataSetTableAdapters.ПреподавателиTableAdapter преподавателиTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn фИОПDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn дисциплинаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn оценкиDataGridViewTextBoxColumn;
     }
 }
