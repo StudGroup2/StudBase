@@ -44,5 +44,11 @@ namespace StudBaseWPF
         {
 
         }
+
+        private void Button_Clic(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.Window1 f2 = new WpfApp1.Window1();
+            f2.ShowDialog();
+        }
     }
 }
