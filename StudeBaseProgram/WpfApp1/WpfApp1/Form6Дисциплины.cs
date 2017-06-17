@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WpfApp1
 {
-    public partial class Form6Дисциплипны : Form
+    public partial class Form6Дисциплины : Form
     {
-        public Form6Дисциплипны()
+        public Form6Дисциплины()
         {
             InitializeComponent();
         }

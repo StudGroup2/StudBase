@@ -1,6 +1,6 @@
 ﻿namespace WpfApp1
 {
-    partial class Form6Дисциплипны
+    partial class Form6Дисциплины
     {
         /// <summary>
         /// Required designer variable.

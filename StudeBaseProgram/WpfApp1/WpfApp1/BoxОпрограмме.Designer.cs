@@ -1,6 +1,6 @@
 ﻿namespace WpfApp1
 {
-    partial class AboutBox1
+    partial class BoxОпрограмме
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -27,7 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoxОпрограмме));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
@@ -86,9 +86,8 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(271, 17);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "Название продукта: База данных студентов";
+            this.labelProductName.Text = "Название продукта";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelProductName.Click += new System.EventHandler(this.labelProductName_Click);
             // 
             // labelVersion
             // 
@@ -99,7 +98,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(271, 17);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Версия: 1.0";
+            this.labelVersion.Text = "Версия";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -125,7 +124,6 @@
             this.labelCompanyName.TabIndex = 22;
             this.labelCompanyName.Text = "Название организации";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelCompanyName.Click += new System.EventHandler(this.labelCompanyName_Click);
             // 
             // textBoxDescription
             // 
@@ -150,9 +148,8 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&ОК";
-            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
-            // AboutBox1
+            // BoxОпрограмме
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,12 +159,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AboutBox1";
+            this.Name = "BoxОпрограмме";
             this.Padding = new System.Windows.Forms.Padding(9);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "О программе";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "AboutBox1";
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();

@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace WpfApp1
 {
-    partial class AboutBox1 : Form
+    partial class BoxОпрограмме : Form
     {
-        public AboutBox1()
+        public BoxОпрограмме()
         {
             InitializeComponent();
-            this.Text = String.Format("О программе {}", AssemblyTitle);
+            this.Text = String.Format("О программе {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Версия {}", AssemblyVersion);
+            this.labelVersion.Text = String.Format("Версия {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
@@ -101,20 +101,5 @@ namespace WpfApp1
             }
         }
         #endregion
-
-        private void labelProductName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void okButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void labelCompanyName_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

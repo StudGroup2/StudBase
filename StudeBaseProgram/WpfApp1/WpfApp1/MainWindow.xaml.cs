@@ -20,6 +20,8 @@ namespace StudBaseWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        public object Button { get; internal set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -58,8 +60,13 @@ namespace StudBaseWPF
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
-            WpfApp1.AboutBox1 f3 = new WpfApp1.AboutBox1();
+            WpfApp1.BoxОпрограмме f3 = new WpfApp1.BoxОпрограмме();
             f3.ShowDialog();
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
