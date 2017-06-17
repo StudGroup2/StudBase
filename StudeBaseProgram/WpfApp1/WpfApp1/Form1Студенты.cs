@@ -25,7 +25,18 @@ namespace WpfApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1Студенты.Update(studBaseDataSet.Студенты);
+            
+            try
+            {
+                this.Validate();
+                this.студентыBindingSource.EndEdit();
+                this.студентыTableAdapter1.Update(this.studBaseDataSet);
+                MessageBox.Show("Update successful");
+            }
+            catch (System.Exception)
+            {
+                MessageBox.Show("Update failed");
+            }
         }
 
         private static void Update(StudBaseDataSet.СтудентыDataTable студенты)
