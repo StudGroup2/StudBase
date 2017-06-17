@@ -37,7 +37,6 @@
             this.годРожденияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.студентыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.преподавателиTableAdapter1 = new WpfApp1.StudBaseDataSetTableAdapters.ПреподавателиTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).BeginInit();
@@ -98,10 +97,6 @@
             this.studBaseDataSet.DataSetName = "StudBaseDataSet";
             this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // преподавателиTableAdapter1
-            // 
-            this.преподавателиTableAdapter1.ClearBeforeFill = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(515, 62);
@@ -112,14 +107,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Form1Студенты
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 261);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "Form1Студенты";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.студентыBindingSource)).EndInit();
@@ -138,7 +133,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn годРожденияDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource студентыBindingSource;
         private StudBaseDataSet studBaseDataSet;
-        private StudBaseDataSetTableAdapters.ПреподавателиTableAdapter преподавателиTableAdapter1;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -19,8 +19,7 @@ namespace WpfApp1
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "studBaseDataSet.Уроки". При необходимости она может быть перемещена или удалена.
-            this.урокиTableAdapter.Fill(this.studBaseDataSet.Уроки);
+           
 
         }
     }

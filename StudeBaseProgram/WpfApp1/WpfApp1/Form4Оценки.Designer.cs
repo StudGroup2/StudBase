@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.оценкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.оценкиTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ОценкиTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОСDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.группыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОПDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.дисциплинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.оценкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.оценкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
+            this.оценкиTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ОценкиTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.оценкиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -60,20 +60,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(660, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // studBaseDataSet
-            // 
-            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
-            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // оценкиBindingSource
-            // 
-            this.оценкиBindingSource.DataMember = "Оценки";
-            this.оценкиBindingSource.DataSource = this.studBaseDataSet;
-            // 
-            // оценкиTableAdapter
-            // 
-            this.оценкиTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -111,18 +98,32 @@
             this.оценкиDataGridViewTextBoxColumn.HeaderText = "Оценки";
             this.оценкиDataGridViewTextBoxColumn.Name = "оценкиDataGridViewTextBoxColumn";
             // 
-            // Form4
+            // оценкиBindingSource
+            // 
+            this.оценкиBindingSource.DataMember = "Оценки";
+            this.оценкиBindingSource.DataSource = this.studBaseDataSet;
+            // 
+            // studBaseDataSet
+            // 
+            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
+            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // оценкиTableAdapter
+            // 
+            this.оценкиTableAdapter.ClearBeforeFill = true;
+            // 
+            // Form4Оценки
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 261);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form4";
+            this.Name = "Form4Оценки";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.оценкиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

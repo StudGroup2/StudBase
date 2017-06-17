@@ -19,8 +19,12 @@ namespace WpfApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "studBaseDataSet.Преподаватели". При необходимости она может быть перемещена или удалена.
-            this.преподавателиTableAdapter.Fill(this.studBaseDataSet.Преподаватели);
+            
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

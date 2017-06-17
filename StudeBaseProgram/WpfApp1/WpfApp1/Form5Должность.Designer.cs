@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.должностьBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.должностьTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ДолжностьTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.должностьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.должностьBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
+            this.должностьTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ДолжностьTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.должностьBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,20 +52,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(625, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // studBaseDataSet
-            // 
-            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
-            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // должностьBindingSource
-            // 
-            this.должностьBindingSource.DataMember = "Должность";
-            this.должностьBindingSource.DataSource = this.studBaseDataSet;
-            // 
-            // должностьTableAdapter
-            // 
-            this.должностьTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -79,18 +66,32 @@
             this.должностьDataGridViewTextBoxColumn.HeaderText = "Должность";
             this.должностьDataGridViewTextBoxColumn.Name = "должностьDataGridViewTextBoxColumn";
             // 
-            // Form5
+            // должностьBindingSource
+            // 
+            this.должностьBindingSource.DataMember = "Должность";
+            this.должностьBindingSource.DataSource = this.studBaseDataSet;
+            // 
+            // studBaseDataSet
+            // 
+            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
+            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // должностьTableAdapter
+            // 
+            this.должностьTableAdapter.ClearBeforeFill = true;
+            // 
+            // Form5Должность
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 315);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form5";
+            this.Name = "Form5Должность";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.должностьBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

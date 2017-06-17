@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.преподавателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.преподавателиTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ПреподавателиTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОПDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.должностьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.предметыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.стажлетDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.преподавателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
+            this.преподавателиTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ПреподавателиTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.преподавателиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -59,20 +59,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(560, 225);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // studBaseDataSet
-            // 
-            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
-            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // преподавателиBindingSource
-            // 
-            this.преподавателиBindingSource.DataMember = "Преподаватели";
-            this.преподавателиBindingSource.DataSource = this.studBaseDataSet;
-            // 
-            // преподавателиTableAdapter
-            // 
-            this.преподавателиTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -104,18 +91,32 @@
             this.стажлетDataGridViewTextBoxColumn.HeaderText = "Стаж (лет)";
             this.стажлетDataGridViewTextBoxColumn.Name = "стажлетDataGridViewTextBoxColumn";
             // 
-            // Form2
+            // преподавателиBindingSource
+            // 
+            this.преподавателиBindingSource.DataMember = "Преподаватели";
+            this.преподавателиBindingSource.DataSource = this.studBaseDataSet;
+            // 
+            // studBaseDataSet
+            // 
+            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
+            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // преподавателиTableAdapter
+            // 
+            this.преподавателиTableAdapter.ClearBeforeFill = true;
+            // 
+            // Form2Преподаватели
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 261);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form2";
+            this.Name = "Form2Преподаватели";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.преподавателиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

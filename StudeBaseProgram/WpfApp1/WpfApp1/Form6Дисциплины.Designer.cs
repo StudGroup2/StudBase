@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
-            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.дисциплиныTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ДисциплиныTableAdapter();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеДисциплиныDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studBaseDataSet = new WpfApp1.StudBaseDataSet();
+            this.дисциплиныTableAdapter = new WpfApp1.StudBaseDataSetTableAdapters.ДисциплиныTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,20 +52,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(270, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // studBaseDataSet
-            // 
-            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
-            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // дисциплиныBindingSource
-            // 
-            this.дисциплиныBindingSource.DataMember = "Дисциплины";
-            this.дисциплиныBindingSource.DataSource = this.studBaseDataSet;
-            // 
-            // дисциплиныTableAdapter
-            // 
-            this.дисциплиныTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // кодDataGridViewTextBoxColumn
             // 
@@ -79,18 +66,32 @@
             this.названиеДисциплиныDataGridViewTextBoxColumn.HeaderText = "Название дисциплины";
             this.названиеДисциплиныDataGridViewTextBoxColumn.Name = "названиеДисциплиныDataGridViewTextBoxColumn";
             // 
-            // Form1
+            // дисциплиныBindingSource
+            // 
+            this.дисциплиныBindingSource.DataMember = "Дисциплины";
+            this.дисциплиныBindingSource.DataSource = this.studBaseDataSet;
+            // 
+            // studBaseDataSet
+            // 
+            this.studBaseDataSet.DataSetName = "StudBaseDataSet";
+            this.studBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // дисциплиныTableAdapter
+            // 
+            this.дисциплиныTableAdapter.ClearBeforeFill = true;
+            // 
+            // Form6Дисциплины
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 261);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "Form6Дисциплины";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

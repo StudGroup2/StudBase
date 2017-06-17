@@ -19,8 +19,11 @@ namespace WpfApp1
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "studBaseDataSet.Оценки". При необходимости она может быть перемещена или удалена.
-            this.оценкиTableAdapter.Fill(this.studBaseDataSet.Оценки);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
