@@ -47,7 +47,9 @@ namespace StudBaseWPF
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-        }
+            WpfApp1.Page1 page1 = new WpfApp1.Page1();
+            this.Content = page1;
+    }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
