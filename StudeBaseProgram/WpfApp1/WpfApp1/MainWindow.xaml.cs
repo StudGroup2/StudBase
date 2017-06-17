@@ -47,7 +47,17 @@ namespace StudBaseWPF
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+        }
 
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.AboutBox1 f3 = new WpfApp1.AboutBox1();
+            f3.ShowDialog();
         }
     }
 }

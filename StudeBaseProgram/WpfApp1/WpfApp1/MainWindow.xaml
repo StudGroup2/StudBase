@@ -21,8 +21,8 @@
         <Button Content="База данных" HorizontalAlignment="Left" Margin="287,198,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2" FontSize="24" FontFamily="Arial Black" BorderBrush="#FF707070" Click="Button_Click_2"/>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="287,548,0,0" VerticalAlignment="Top" Width="700" Height="100" Click="Button_Click" Grid.ColumnSpan="2" FontFamily="Arial Black" FontSize="24"/>
         <Button Content="Авторы" HorizontalAlignment="Left" Margin="287,371,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2"  Click="Button_Click_1" FontSize="24" FontFamily="Arial Black"/>
-        <Menu Margin="0,0,0,658" Grid.ColumnSpan="2">
-            <MenuItem Header="File" FontSize="16" Height="19" Width="60">
+        <Menu Margin="0,0,0,649" Grid.ColumnSpan="2">
+            <MenuItem Header="File" FontSize="16" Height="24" Width="60" Click="MenuItem_Click_2">
                 <MenuItem Header="New"></MenuItem>
                 <MenuItem Header="Open"></MenuItem>
                 <MenuItem Header="Save"></MenuItem>
@@ -30,7 +30,7 @@
                 <Separator></Separator>
                 <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit" Height="19" Width="60" FontSize="16">
+            <MenuItem Header="Edit" Height="23" Width="60" FontSize="16">
                 <MenuItem Header="Undo"/>
                 <MenuItem Header="Redo"/>
                 <Separator/>
@@ -38,6 +38,7 @@
                 <MenuItem Header="Copy"/>
                 <MenuItem Header="Paste"/>
             </MenuItem>
+            <MenuItem Header="О программе" Height="31" Width="130" FontSize="16" Click="MenuItem_Click_3"/>
         </Menu>
     </Grid>
 </Window>

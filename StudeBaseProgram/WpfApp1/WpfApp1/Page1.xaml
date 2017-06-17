@@ -39,9 +39,10 @@
             </MenuItem>
         </Menu>
         <Button Content="Студенты" HorizontalAlignment="Left" Margin="410,196,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold"/>
-        <Button Content="Преподаватели" HorizontalAlignment="Left" Margin="100,196,0,0" VerticalAlignment="Top" Width="162" Height="70" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Преподаватели" HorizontalAlignment="Left" Margin="94,196,0,0" VerticalAlignment="Top" Width="168" Height="70" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
         <Button Content="Уроки" HorizontalAlignment="Left" Margin="410,345,0,0" VerticalAlignment="Top" Width="168" Height="69" FontSize="18" FontWeight="Bold"/>
-        <Button Content="Оценки" HorizontalAlignment="Left" Margin="100,345,0,0" VerticalAlignment="Top" Width="162" Height="69" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Оценки" HorizontalAlignment="Left" Margin="94,345,0,0" VerticalAlignment="Top" Width="168" Height="69" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
         <Button Content="Должность" HorizontalAlignment="Left" Margin="410,480,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Дисциплины" HorizontalAlignment="Left" Margin="94,480,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
     </Grid>
 </Page>

@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AboutBox1.cs">
+    <Compile Include="Form7Опрограмме.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutBox1.Designer.cs">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
+    <Compile Include="Form7Опрограмме.Designer.cs">
+      <DependentUpon>Form7Опрограмме.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6Дисциплипны.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6Дисциплипны.Designer.cs">
+      <DependentUpon>Form6Дисциплипны.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1Студенты.cs">
       <SubType>Form</SubType>
@@ -137,8 +143,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
+    <EmbeddedResource Include="Form7Опрограмме.resx">
+      <DependentUpon>Form7Опрограмме.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6Дисциплипны.resx">
+      <DependentUpon>Form6Дисциплипны.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1Студенты.resx">
       <DependentUpon>Form1Студенты.cs</DependentUpon>
