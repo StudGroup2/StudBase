@@ -1,7 +1,7 @@
 USE [StudBase]
 GO
 
-/****** Object:  Table [dbo].[Студенты]    Script Date: 18.06.2017 18:18:02 ******/
+/****** Object:  Table [dbo].[Студенты]    Script Date: 14.06.2017 18:05:57 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,10 +9,10 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Студенты](
-	[Код] [int] IDENTITY(1,1) NOT NULL,
-	[ФИО С] [nvarchar](15) NOT NULL,
-	[№ Группы] [nvarchar](15) NULL,
-	[Год рождения] [nvarchar](15) NULL,
+	[Код] [int] NOT NULL,
+	[ФИО С] [nchar](50) NOT NULL,
+	[№ Группы] [nchar](50) NULL,
+	[Год рождения] [nchar](50) NULL,
  CONSTRAINT [код с] PRIMARY KEY CLUSTERED 
 (
 	[Код] ASC

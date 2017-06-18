@@ -1,7 +1,7 @@
 USE [StudBase]
 GO
 
-/****** Object:  Table [dbo].[Уроки]    Script Date: 14.06.2017 18:09:51 ******/
+/****** Object:  Table [dbo].[Уроки]    Script Date: 18.06.2017 18:18:39 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -9,11 +9,11 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Уроки](
-	[Код] [int] NOT NULL,
-	[Название дисциплины] [nchar](50) NULL,
-	[Дата урока] [date] NULL,
-	[ФИО П] [nchar](50) NULL,
-	[ФИО С] [nchar](50) NULL,
+	[Код] [int] IDENTITY(1,1) NOT NULL,
+	[Дисциплина] [nvarchar](15) NULL,
+	[ФИО П] [int] NULL,
+	[№ Группы] [nvarchar](15) NULL,
+	[ФИО С] [int] NULL,
 	[Оценки] [int] NULL,
 	[Присутствие на занятии] [bit] NULL,
  CONSTRAINT [PK_Уроки] PRIMARY KEY CLUSTERED 
@@ -24,24 +24,28 @@ CREATE TABLE [dbo].[Уроки](
 
 GO
 
-ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Дисциплины1] FOREIGN KEY([Название дисциплины])
-REFERENCES [dbo].[Дисциплины] ([Название дисциплины])
+ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Дисциплины] FOREIGN KEY([Дисциплина])
+REFERENCES [dbo].[Дисциплины] ([Дисциплина])
 GO
 
-ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Дисциплины1]
+ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Дисциплины]
 GO
 
-ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Преподаватели1] FOREIGN KEY([ФИО П])
-REFERENCES [dbo].[Преподаватели] ([ФИО П])
+ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Преподаватели] FOREIGN KEY([ФИО П])
+REFERENCES [dbo].[Преподаватели] ([Код])
+ON UPDATE CASCADE
+ON DELETE CASCADE
 GO
 
-ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Преподаватели1]
+ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Преподаватели]
 GO
 
-ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Студенты1] FOREIGN KEY([ФИО С])
-REFERENCES [dbo].[Студенты] ([ФИО С])
+ALTER TABLE [dbo].[Уроки]  WITH CHECK ADD  CONSTRAINT [FK_Уроки_Студенты] FOREIGN KEY([ФИО С])
+REFERENCES [dbo].[Студенты] ([Код])
+ON UPDATE CASCADE
+ON DELETE CASCADE
 GO
 
-ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Студенты1]
+ALTER TABLE [dbo].[Уроки] CHECK CONSTRAINT [FK_Уроки_Студенты]
 GO
 
