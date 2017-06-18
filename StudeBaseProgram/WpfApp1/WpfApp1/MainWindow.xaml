@@ -19,9 +19,9 @@
         </Grid.Background>
 
         <Image Source="zxc.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
-        <Button Content="База данных" HorizontalAlignment="Left" Margin="287,198,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2" FontSize="24" FontFamily="Arial Black" BorderBrush="#FF707070" Click="Button_Click_2"/>
-        <Button Content="Выход" HorizontalAlignment="Left" Margin="287,548,0,0" VerticalAlignment="Top" Width="700" Height="100" Click="Button_Click" Grid.ColumnSpan="2" FontFamily="Arial Black" FontSize="24"/>
-        <Button Content="Авторы" HorizontalAlignment="Left" Margin="287,371,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2"  Click="Button_Click_1" FontSize="24" FontFamily="Arial Black"/>
+        <Button Content="База данных" HorizontalAlignment="Left" Margin="287,198,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2" FontSize="24" FontFamily="Arial Black" BorderBrush="#FF707070" Click="Button_Base"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="287,548,0,0" VerticalAlignment="Top" Width="700" Height="100" Click="Button_Exit" Grid.ColumnSpan="2" FontFamily="Arial Black" FontSize="24"/>
+        <Button Content="Авторы" HorizontalAlignment="Left" Margin="287,371,0,0" VerticalAlignment="Top" Width="700" Height="100" Grid.ColumnSpan="2"  Click="Button_Authors" FontSize="24" FontFamily="Arial Black"/>
         <Menu Margin="0,0,0,649" Grid.ColumnSpan="2">
             <MenuItem Header="File" FontSize="16" Height="24" Width="60" Click="MenuItem_Click_2">
                 <MenuItem Header="New"></MenuItem>

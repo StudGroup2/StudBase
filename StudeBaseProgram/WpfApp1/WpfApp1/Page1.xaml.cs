@@ -31,9 +31,9 @@ namespace WpfApp1
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Menu(object sender, RoutedEventArgs e)
         {
-           
+            
 
         }
 
@@ -42,19 +42,19 @@ namespace WpfApp1
             
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Student(object sender, RoutedEventArgs e)
         {
             WpfApp1.Form1Студенты ff = new WpfApp1.Form1Студенты();
             ff.ShowDialog();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Prepod(object sender, RoutedEventArgs e)
         {
             WpfApp1.Form2Преподаватели ff1 = new WpfApp1.Form2Преподаватели();
             ff1.ShowDialog();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Button_Urok(object sender, RoutedEventArgs e)
         {
             WpfApp1.Form3Уроки ff2 = new WpfApp1.Form3Уроки();
             ff2.ShowDialog();
@@ -66,13 +66,13 @@ namespace WpfApp1
             ff3.ShowDialog();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private void Button_Dolgn(object sender, RoutedEventArgs e)
         {
             WpfApp1.Form5Должность ff4 = new WpfApp1.Form5Должность();
             ff4.ShowDialog();
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private void Button_Discipl(object sender, RoutedEventArgs e)
         {
             WpfApp1.Form6Дисциплины ff5 = new WpfApp1.Form6Дисциплины();
             ff5.ShowDialog();

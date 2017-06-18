@@ -27,12 +27,12 @@ namespace StudBaseWPF
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Exit(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Authors(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Тимин А.А. & Таратынов А.Н.", "Авторы");
         }
@@ -47,7 +47,7 @@ namespace StudBaseWPF
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Base(object sender, RoutedEventArgs e)
         {
             WpfApp1.Page1 page1 = new WpfApp1.Page1();
             this.Content = page1;
