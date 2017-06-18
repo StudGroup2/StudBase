@@ -5,26 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        <Grid.Background>
+        
 
-            <ImageBrush/>
+        <Image Source="zxc.jpg" Stretch="Fill" Height="569" VerticalAlignment="Top"/>
 
-        </Grid.Background>
-
-        <Image Source="zxc.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
-
-        <Button Content="Студенты" HorizontalAlignment="Left" Margin="63,69,0,0" VerticalAlignment="Top" Width="75" Click="Button_Stud"/>
-
-        <Menu Margin="0,0,0,649" Grid.ColumnSpan="2">
+        <Menu Margin="0,0,0,530" Grid.ColumnSpan="2">
             <MenuItem Header="Студенты" FontSize="16" Height="24" Width="78" Click="MenuItem_Stud"/>
             <MenuItem Header="Преподаватели" Height="24" Width="128" FontSize="16" Click="MenuItem_Prepod"/>
-            <MenuItem Header="Оценки" FontSize="16" Height="24" Width="73" Click="MenuItem_Num"/>
+            <MenuItem Header="Уроки" FontSize="16" Height="24" Width="59" Click="MenuItem_Num"/>
             <MenuItem Header="Должности" FontSize="16" Height="24" Width="96" Click="MenuItem_Dolgn"/>
             <MenuItem Header="Дисциплины" FontSize="16" Height="24" Width="109" Click="MenuItem_Discip"/>
             <MenuItem Header="О программе" Height="31" Width="115" FontSize="16" Click="MenuItem_Prog"/>
         </Menu>
+        
 
     </Grid>
 </Window>

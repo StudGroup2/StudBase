@@ -44,21 +44,25 @@ namespace WpfApp2
 
         private void MenuItem_Num(object sender, RoutedEventArgs e)
         {
-
+            WpfApp2.Оценки f3 = new WpfApp2.Оценки();
+            f3.ShowDialog();
         }
 
         private void MenuItem_Dolgn(object sender, RoutedEventArgs e)
         {
-
+            WpfApp2.Должности f3 = new WpfApp2.Должности();
+            f3.ShowDialog();
         }
         private void MenuItem_Discip(object sender, RoutedEventArgs e)
         {
-
+            WpfApp2.Дисциплины f3 = new WpfApp2.Дисциплины();
+            f3.ShowDialog();
         }
 
         private void MenuItem_Prog(object sender, RoutedEventArgs e)
         {
-
+            WpfApp2.About f3 = new WpfApp2.About();
+            f3.ShowDialog();
         }
     }
 }

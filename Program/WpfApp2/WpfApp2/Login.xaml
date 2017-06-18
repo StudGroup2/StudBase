@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300">
+        Title="Login" Height="278" Width="276">
     <Grid>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="49,92,0,0" VerticalAlignment="Top"/>
         <Label Content="Пароль&#xD;&#xA;" HorizontalAlignment="Left" Margin="49,136,0,0" VerticalAlignment="Top" Width="52" Height="27"/>
-        <TextBox x:Name="TB_Password" HorizontalAlignment="Left" Height="23" Margin="117,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="TB_Login" HorizontalAlignment="Left" Height="23" Margin="117,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_Password" HorizontalAlignment="Left" Height="23" Margin="117,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Войти" HorizontalAlignment="Left" Margin="88,198,0,0" VerticalAlignment="Top" Width="97" Click="Button_Login"/>
+        <Label Content="Вход" HorizontalAlignment="Left" Margin="69,33,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

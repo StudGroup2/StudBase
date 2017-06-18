@@ -36,11 +36,11 @@ namespace WpfApp2
                 this.Validate();
                 this.преподавателиBindingSource.EndEdit();
                 this.преподавателиTableAdapter.Update(this.studBase);
-                MessageBox.Show("Update successful");
+                MessageBox.Show("Успешно сохраненно");
             }
             catch (System.Exception)
             {
-                MessageBox.Show("Update failed");
+                MessageBox.Show("Ошибка сохранения");
             }
         }
     }

@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace WpfApp2
 {
-    public partial class Stud : Form
+    public partial class Дисциплины : Form
     {
-        public Stud()
+        public Дисциплины()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Дисциплины_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "studBase.Студенты". При необходимости она может быть перемещена или удалена.
-            this.студентыTableAdapter.Fill(this.studBase.Студенты);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "studBase.Дисциплины". При необходимости она может быть перемещена или удалена.
+            this.дисциплиныTableAdapter.Fill(this.studBase.Дисциплины);
 
         }
 
@@ -29,8 +29,8 @@ namespace WpfApp2
             try
             {
                 this.Validate();
-                this.студентыBindingSource.EndEdit();
-                this.студентыTableAdapter.Update(this.studBase);
+                this.дисциплиныBindingSource.EndEdit();
+                this.дисциплиныTableAdapter.Update(this.studBase);
                 MessageBox.Show("Успешно сохраненно");
             }
             catch (System.Exception)
@@ -38,6 +38,5 @@ namespace WpfApp2
                 MessageBox.Show("Ошибка сохранения");
             }
         }
-
     }
 }
