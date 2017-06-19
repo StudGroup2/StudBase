@@ -212,5 +212,8 @@
   <ItemGroup>
     <Resource Include="zxc.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qaz.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

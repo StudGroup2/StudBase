@@ -37,6 +37,7 @@
                 <MenuItem Header="Copy"/>
                 <MenuItem Header="Paste"/>
             </MenuItem>
+            <MenuItem Header="О программе" Height="31" Width="130" FontSize="16" Click="MenuItem_Click_3"/>
         </Menu>
         <Button Content="Студенты" HorizontalAlignment="Left" Margin="410,154,0,0" VerticalAlignment="Top" Width="168" Height="70" FontSize="18" FontWeight="Bold" Click="Button_Student"/>
         <Button Content="Преподаватели" HorizontalAlignment="Left" Margin="94,154,0,0" VerticalAlignment="Top" Width="168" Height="70" Grid.Column="1" FontSize="18" FontWeight="Bold" Click="Button_Prepod"/>

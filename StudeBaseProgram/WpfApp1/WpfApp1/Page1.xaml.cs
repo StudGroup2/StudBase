@@ -77,5 +77,11 @@ namespace WpfApp1
             WpfApp1.Form6Дисциплины ff5 = new WpfApp1.Form6Дисциплины();
             ff5.ShowDialog();
         }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.BoxОпрограмме f3 = new WpfApp1.BoxОпрограмме();
+            f3.ShowDialog();
+        }
     }
 }
