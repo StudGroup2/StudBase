@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="MainWindow" Height="578" Width="800">
     <Grid>
         
 
-        <Image Source="zxc.jpg" Stretch="Fill" Height="569" VerticalAlignment="Top"/>
+        <Image Source="zxc.jpg" Stretch="Fill" Height="539" VerticalAlignment="Top" Margin="0,10,0,0"/>
 
-        <Menu Margin="0,0,0,530" Grid.ColumnSpan="2">
+        <Menu Margin="0,0,0,510" Grid.ColumnSpan="2">
             <MenuItem Header="Студенты" FontSize="16" Height="24" Width="78" Click="MenuItem_Stud"/>
             <MenuItem Header="Преподаватели" Height="24" Width="128" FontSize="16" Click="MenuItem_Prepod"/>
             <MenuItem Header="Уроки" FontSize="16" Height="24" Width="59" Click="MenuItem_Num"/>
             <MenuItem Header="Должности" FontSize="16" Height="24" Width="96" Click="MenuItem_Dolgn"/>
             <MenuItem Header="Дисциплины" FontSize="16" Height="24" Width="109" Click="MenuItem_Discip"/>
-            <MenuItem Header="О программе" Height="31" Width="115" FontSize="16" Click="MenuItem_Prog"/>
+            <MenuItem Header="О программе" Height="27" Width="115" FontSize="16" Click="MenuItem_Prog"/>
         </Menu>
         
 
