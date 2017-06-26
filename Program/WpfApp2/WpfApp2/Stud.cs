@@ -32,7 +32,7 @@ namespace WpfApp2
                 this.Validate();
                 this.студентыBindingSource.EndEdit();
                 this.студентыTableAdapter.Update(this.studBase);
-                MessageBox.Show("Успешно сохраненно");
+                MessageBox.Show("Успешно сохранено");
             }
             catch (System.Exception)
             {
