@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="578" Width="800">
+        Title="Главное меню" Height="430" Width="773.5">
     <Grid>
         
 
         <Image Source="zxc.jpg" Stretch="Fill" Height="539" VerticalAlignment="Top" Margin="0,10,0,0"/>
 
-        <Menu Margin="0,0,0,510" Grid.ColumnSpan="2">
+        <Menu Margin="0,0,0,365" Grid.ColumnSpan="2">
             <MenuItem Header="Студенты" FontSize="16" Height="24" Width="78" Click="MenuItem_Stud"/>
             <MenuItem Header="Преподаватели" Height="24" Width="128" FontSize="16" Click="MenuItem_Prepod"/>
             <MenuItem Header="Уроки" FontSize="16" Height="24" Width="59" Click="MenuItem_Num"/>

@@ -5,14 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Login" Height="278" Width="276">
-    <Grid>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="49,92,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пароль&#xD;&#xA;" HorizontalAlignment="Left" Margin="49,136,0,0" VerticalAlignment="Top" Width="52" Height="27"/>
-        <TextBox x:Name="TB_Login" HorizontalAlignment="Left" Height="23" Margin="117,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TB_Password" HorizontalAlignment="Left" Height="23" Margin="117,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Войти" HorizontalAlignment="Left" Margin="88,198,0,0" VerticalAlignment="Top" Width="97" Click="Button_Login"/>
-        <Label Content="Вход" HorizontalAlignment="Left" Margin="69,33,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center"/>
+        Title="Авторизация" Height="278" Width="292.585" ShowInTaskbar="False">
+    <Grid Background="Gainsboro">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="141*"/>
+            <RowDefinition Height="106*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="47,95,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="54"/>
+        <Label Content="Пароль&#xD;&#xA;" HorizontalAlignment="Left" Margin="47,136,0,0" VerticalAlignment="Top" Width="60" Height="27" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBox x:Name="TB_Login" HorizontalAlignment="Left" Height="23" Margin="123,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_Password" HorizontalAlignment="Left" Height="23" Margin="123,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" TextChanged="TB_Password_TextChanged"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="97,61,0,0" VerticalAlignment="Top" Width="97" Click="Button_Login" FontWeight="Bold" Grid.Row="1"/>
+        <Label Content="Вход" HorizontalAlignment="Left" Margin="78,33,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>

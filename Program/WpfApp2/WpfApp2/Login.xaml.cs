@@ -60,5 +60,10 @@ namespace WpfApp2
                 }
             
         }
+
+        private void TB_Password_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

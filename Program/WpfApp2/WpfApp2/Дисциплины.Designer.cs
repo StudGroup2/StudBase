@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studBase = new WpfApp2.StudBase();
-            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.дисциплиныTableAdapter = new WpfApp2.StudBaseTableAdapters.ДисциплиныTableAdapter();
             this.дисциплинаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studBase = new WpfApp2.StudBase();
+            this.дисциплиныTableAdapter = new WpfApp2.StudBaseTableAdapters.ДисциплиныTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBase)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -52,25 +53,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(147, 342);
             this.dataGridView1.TabIndex = 0;
             // 
-            // studBase
+            // дисциплинаDataGridViewTextBoxColumn
             // 
-            this.studBase.DataSetName = "StudBase";
-            this.studBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.дисциплинаDataGridViewTextBoxColumn.DataPropertyName = "Дисциплина";
+            this.дисциплинаDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
+            this.дисциплинаDataGridViewTextBoxColumn.Name = "дисциплинаDataGridViewTextBoxColumn";
             // 
             // дисциплиныBindingSource
             // 
             this.дисциплиныBindingSource.DataMember = "Дисциплины";
             this.дисциплиныBindingSource.DataSource = this.studBase;
             // 
+            // studBase
+            // 
+            this.studBase.DataSetName = "StudBase";
+            this.studBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // дисциплиныTableAdapter
             // 
             this.дисциплиныTableAdapter.ClearBeforeFill = true;
-            // 
-            // дисциплинаDataGridViewTextBoxColumn
-            // 
-            this.дисциплинаDataGridViewTextBoxColumn.DataPropertyName = "Дисциплина";
-            this.дисциплинаDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
-            this.дисциплинаDataGridViewTextBoxColumn.Name = "дисциплинаDataGridViewTextBoxColumn";
             // 
             // button1
             // 
@@ -82,19 +83,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(166, 302);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Удалить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Дисциплины
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 366);
+            this.ClientSize = new System.Drawing.Size(262, 366);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Дисциплины";
             this.Text = "Дисциплины";
             this.Load += new System.EventHandler(this.Дисциплины_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studBase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +119,6 @@
         private StudBaseTableAdapters.ДисциплиныTableAdapter дисциплиныTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn дисциплинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

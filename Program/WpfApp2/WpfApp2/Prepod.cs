@@ -30,7 +30,8 @@ namespace WpfApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("Вы действительно хотите сохранить?", "Сохранение", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                try
             {
                 this.Validate();
                 this.преподавателиBindingSource.EndEdit();
@@ -41,6 +42,21 @@ namespace WpfApp2
             {
                 MessageBox.Show("Ошибка сохранения");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите удалить?", "Удаление", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                try
+                {
+                    int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                    dataGridView1.Rows.RemoveAt(rowIndex);
+                    MessageBox.Show("Успешно удалено");
+                }
+                catch (System.Exception)
+                {
+                    MessageBox.Show("Ошибка удаления");
+                }
         }
     }
 }
