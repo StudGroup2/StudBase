@@ -41,15 +41,10 @@ namespace WpfApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int rowIndex = dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows.RemoveAt(rowIndex);
-        }
-
-        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             if (MessageBox.Show("Are you sure to delete data?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+                int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                dataGridView1.Rows.RemoveAt(rowIndex); ;
             }
         }
     }

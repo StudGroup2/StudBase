@@ -12,8 +12,6 @@ namespace WpfApp2
 {
     public partial class Prepod : Form
     {
-        private int rowIndex = 0;
-
         public Prepod()
         {
             InitializeComponent();
